@@ -20,5 +20,7 @@ from posts import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    #path/helloworld/
     path('post/',include('posts.urls'))
+
 ]

@@ -11,7 +11,7 @@ posts=[
 
     {
         "id":2,
-        "title": 'Django the best framework',
+        "title": 'Django  is the best framework',
         "content":'Django is almost used by every big tech companies like google , facebook, youtube , instagram , etc'
     },
 
@@ -26,7 +26,7 @@ posts=[
 
 
 
-def  home(reqest):
+def home(reqest):
     html= ""
     for post in posts:
         html += f'''
@@ -36,3 +36,8 @@ def  home(reqest):
             </div>
 '''
     return HttpResponse(html)
+
+
+def post(reqest,id):
+    print(type(id))
+    return HttpResponse(f"{id}")
